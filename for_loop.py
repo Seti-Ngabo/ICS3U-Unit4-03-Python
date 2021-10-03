@@ -24,6 +24,7 @@ def main():
             for loop_counter in range(user_number_as_integer + 1):
                 total = loop_counter ** 2
                 print("{0}² = {1}".format(loop_counter, total))
+    
     except Exception:
         print("Invalid input, try again.")
 
