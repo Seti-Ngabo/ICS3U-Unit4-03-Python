@@ -19,14 +19,16 @@ def main():
     try:
         user_number_as_integer = int(user_number_as_string)
         if user_number_as_integer < 0:
-            print("{0} is not a positive ineger.".format(user_number_as_string))
+            print("{0} is a negative integer.".format(user_number_as_string))
+        elif user_number_as_integer <= 0.0:
+            print("{0} is not a decimal integer.".format(user_number_as_string))
         else:
             for loop_counter in range(user_number_as_integer + 1):
                 total = loop_counter ** 2
                 print("{0}² = {1}".format(loop_counter, total))
     
     except Exception:
-        print("Invalid input, try again.")
+        print("{0} is not an integer.".format(user_number_as_string))
 
     print("\nDone.")
 
